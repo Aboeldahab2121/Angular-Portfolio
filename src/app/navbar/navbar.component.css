@@ -1,0 +1,31 @@
+.nav-link {
+  position: relative;
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #0dcaf0; 
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 50%;
+}
+
+.active-link {
+  color: #0dcaf0 !important;
+  font-weight: 600;
+}
+
+.active-link::after {
+  width: 50%;
+  background-color: #0dcaf0;
+}

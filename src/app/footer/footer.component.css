@@ -1,0 +1,41 @@
+.footer {
+  background-color: #111827; 
+  color: #e5e7eb; 
+}
+
+.footer-bottom {
+  background-color: #0f172a; 
+  border-top: 1px solid #1f2937;
+}
+
+h5 {
+  letter-spacing: 1px;
+}
+
+.text-secondary {
+  color: #9ca3af !important; 
+}
+
+.btn-social {
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e5e7eb;
+  color: #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.btn-social:hover {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+}
