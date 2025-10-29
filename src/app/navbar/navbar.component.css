@@ -1,31 +1,105 @@
+/* --- Base Navbar --- */
+.navbar {
+  background: rgba(17, 25, 40, 0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.15);
+  transition: all 0.4s ease;
+  padding: 1rem 2rem;
+}
+
+/* --- Navbar when scrolled --- */
+.navbar-scrolled {
+  background: rgba(10, 15, 28, 0.9) !important;
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  transition: all 0.4s ease-in-out;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* --- Brand --- */
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #00ffff !important;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+.navbar-scrolled .navbar-brand {
+  transform: scale(0.95);
+}
+
+/* --- Nav Links --- */
 .nav-link {
   position: relative;
-  color: #fff !important;
+  color: #e0f2f1 !important;
+  margin: 0 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
   transition: color 0.3s ease;
 }
 
 .nav-link::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  left: 50%;
+  bottom: 2px;
+  left: 0;
   width: 0;
   height: 2px;
-  background-color: #0dcaf0; 
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
+  background-color: #00ffff;
+  transition: width 0.3s ease;
 }
 
-.nav-link:hover::after {
-  width: 50%;
+.nav-link:hover {
+  color: #00ffff !important;
 }
 
-.active-link {
-  color: #0dcaf0 !important;
-  font-weight: 600;
-}
-
+.nav-link:hover::after,
 .active-link::after {
-  width: 50%;
-  background-color: #0dcaf0;
+  width: 100%;
+}
+
+/* --- Active link styling --- */
+.active-link {
+  color: #00ffff !important;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* --- Toggler --- */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 768px) {
+  .navbar {
+    backdrop-filter: blur(8px);
+  }
+
+  .nav-link {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  .active-link {
+    color: #00ffff !important;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  }
 }

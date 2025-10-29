@@ -1,1 +1,33 @@
-<p>projects works!</p>
+<div class="portfolio-section">
+    <div class="container">
+        <h2 class="text-center">My Projects</h2>
+        <div class="row g-4 my-2">
+            <div class="col-12 col-sm-6 col-md-4" *ngFor="let project of projects" (click)="openProject(project)">
+                <div class="overlay-card">
+                    <img [src]="project.logo" class="card-bg" alt="Project logo" />
+                    <div class="card-overlay">
+                        <h3 class="card-title">{{ project.title }}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="custom-modal-backdrop" *ngIf="selectedProject" (click)="closeProject()">
+        <div class="custom-modal" (click)="$event.stopPropagation()">
+            <button class="close-btn" (click)="closeProject()">&times;</button>
+
+            <!-- Project Image -->
+            <img [src]="selectedProject.logo" alt="Project Image" />
+
+            <h3 class="fw-bold">{{ selectedProject.title }}</h3>
+            <p>{{ selectedProject.description }}</p>
+            <ul>
+                <li *ngFor="let detail of selectedProject.details">
+                    {{ detail }}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
