@@ -1,0 +1,107 @@
+body {
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+}
+
+.carousel {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top left, #0d1117, #111111);
+  color: #e0e0e0;
+}
+
+.carousel-content {
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.2);
+}
+
+.carousel h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #00e5ff;
+}
+
+.carousel p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.highlight {
+  color: #90caf9;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 0.6rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-info {
+  color: #00e5ff;
+  border-color: #00e5ff;
+}
+
+.btn-outline-info:hover {
+  background-color: #00e5ff;
+  color: #0d1117;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.about-section {
+  background: #121212;
+  color: #e0e0e0;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+
+.section-title {
+  color: #00e5ff;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.skills-section {
+  background: linear-gradient(135deg, #141414, #1a1a1a);
+  color: #e0e0e0;
+}
+
+.skill {
+  background: rgba(0, 229, 255, 0.05);
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  color: #90caf9;
+  font-weight: 500;
+  transition: transform 0.3s ease-in-out, background 0.3s;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.1);
+  cursor:default;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 229, 255, 0.15);
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+}
+
+.collab-section {
+  background: #0f0f0f;
+  color: #e0e0e0;
+  border-top: 1px solid #222;
+}
+
+.collab-section p {
+  color: #b0bec5;
+}

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
 .portfolio-section {
   background: radial-gradient(circle at top left, rgba(0, 255, 255, 0.08), transparent 60%),
               radial-gradient(circle at bottom right, rgba(0, 255, 255, 0.05), transparent 60%),
@@ -5,6 +8,31 @@
   padding: 50px 0;
   color: #f8fafc;
 }
+
+.portfolio-section h2 {
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #90caf9; /* Soft cyan to match modal glow */
+  letter-spacing: 1px;
+  position: relative;
+  display: block;
+  margin: 2rem auto 1rem;
+}
+
+.portfolio-section h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #00bcd4, #2196f3);
+}
+
 
 .overlay-card {
   position: relative;

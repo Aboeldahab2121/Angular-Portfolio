@@ -1,3 +1,73 @@
-<h1 class="display-5">
-    here goes the home component
-</h1>
+<div id="homeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <div class="carousel-content text-center">
+        <h2>Hello, I'm <span class="highlight">Mostafa Aboeldahab</span></h2>
+        <p>A passionate <strong>Full-Stack Web Developer</strong> specialized in building modern and efficient web solutions.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="carousel-content text-center">
+        <h2>My Experience</h2>
+        <p>
+          With hands-on experience in <strong>Angular, Laravel, and .NET</strong>, I’ve developed and maintained multiple
+          full-stack applications delivering real business impact.
+        </p>
+        <button class="btn btn-outline-info mt-3" routerLink="/projects">View My Projects</button>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="carousel-content text-center">
+        <h2>Let's Connect!</h2>
+        <p>Find me on <strong>LinkedIn</strong> to stay in touch and explore potential collaborations.</p>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+          <a href="https://www.linkedin.com/in/mostafaaboeldahab" target="_blank" class="btn btn-outline-light">
+            Visit LinkedIn
+          </a>
+          <button class="btn btn-outline-info" routerLink="/contact">Contact Me</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<section class="about-section text-center py-5">
+  <div class="container">
+    <h3 class="section-title">About Me</h3>
+    <p class="lead">
+      I'm a passionate <strong>Full-Stack Developer</strong> who loves crafting web applications 
+      that combine clean design, robust back-end logic, and seamless user experiences.
+    </p>
+  </div>
+</section>
+
+<section class="skills-section text-center py-5">
+  <div class="container">
+    <h3 class="section-title">Skills & Technologies</h3>
+    <div class="d-flex flex-wrap justify-content-center gap-4 mt-3">
+      <div class="skill"><i class="fab fa-laravel"></i> Laravel</div>
+      <div class="skill"><i class="fab fa-angular"></i> Angular</div>
+      <div class="skill"><i class="fab fa-node-js"></i> Node.js</div>
+      <div class="skill"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+      <div class="skill"><i class="fas fa-database"></i> SQL</div>
+    </div>
+  </div>
+</section>
+
+<section class="collab-section text-center py-5">
+  <div class="container">
+    <h3 class="section-title">Let's Build Something Great</h3>
+    <p>I'm open to new opportunities, freelance work, and collaborations.</p>
+    <button routerLink="/contact" class="btn btn-outline-info mt-3">Contact Me</button>
+  </div>
+</section>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 /* --- Base Navbar --- */
 .navbar {
   background: rgba(17, 25, 40, 0.7);
@@ -21,15 +22,14 @@
 /* --- Brand --- */
 .navbar-brand {
   font-size: 1.6rem;
-  font-weight: bold;
+  font-family: 'Great Vibes';
   color: #00ffff !important;
   text-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
   letter-spacing: 1px;
-  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  transition: text-shadow 0.3s ease;
 }
 
 .navbar-brand:hover {
-  transform: scale(1.05);
   text-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
 }
 
